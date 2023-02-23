@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="img1.jpg" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="img1.jpg" onclick="img('img1.jpg')">
+          <img src="img2.jpg" onclick="img('img2.jpg')">
+          <img src="img3.jpg" onclick="img('img3.jpg')">
+          <img src="img4.jpg" onclick="img('img4.jpg')">
+          <img src="img5.jpg" onclick="img('img5.jpg')">
+          <img src="img6.jpg" onclick="img('img6.jpg')">
+        </div>
+      </div>
+      <div class="right">
+        <h3>Fridge</h3>
+        <h4> <small>$</small>20000.19 </h4>
+        <p>A refrigerator, colloquially fridge, is a commercial and home appliance consisting of a thermally insulated compartment and a heat pump (mechanical, electronic or chemical) that transfers heat from its inside to its external environment so that its inside is cooled to a temperature below the room temperature. </p>
+        <h5>Color-blue,silver etc</h5>
+        <div class="color flex1">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h5>Number</h5>
+        <div class="add flex1">
+          <span>-</span>
+          <label>1</label>
+          <span>+</span>
+        </div>
+
+        <button>add button</button>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>
